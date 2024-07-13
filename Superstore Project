@@ -25,3 +25,36 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
+#For this project, I used SQL to query the Superstore database to get information about items sold at the store and their prices.
+
+#Used a SELECT statement to order the items by price in descending order
+SELECT item_name, price
+FROM superstore
+ORDER BY price desc;
+
+#Used a statement to get different statistics from the data
+SELECT SUM(price)
+FROM superstore;
+
+SELECT MAX(stock_quantity)
+FROM superstore;
+
+SELECT AVG(average_rating)
+FROM superstore;
+
+SELECT MIN(price)
+FROM superstore;
+
+SELECT COUNT(stock_quantity)
+FROM superstore;
+
+#Used a SELECT statement to get the average price of Kitchen Supplies
+SELECT AVG(price), ('Kitchen Supplies')
+FROM superstore;
+
+#Made up my own question about the data
+-- What is the highest rating for Electronics?
+
+SELECT MAX(average_rating), ('ELectronics')
+FROM superstore;
+
