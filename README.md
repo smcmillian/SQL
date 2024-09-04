@@ -1,2 +1,2 @@
 # SQL Portfolio
-# Welcome to my SQL Portfolio where I have taken a class to learn and practice SQL
+# Welcome to my SQL Portfolio where I have taken a course to learn and practice SQL
